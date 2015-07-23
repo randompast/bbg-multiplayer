@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Game Testing</title>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/primus/primus.js"></script>
+    <script src="/api/game-state.js"></script>
+</head>
+
+<body>
+
+    <form id="chat-container" class="chat-container">
+        <div class="log"></div>
+        <div class="input-container">
+            <input class="input-message" placeholder="write a message" />
+            <button type="submit" class="btn-submit">Send</button>
+
+        </div>
+        <input class="input-username" placeholder="username" />
+        <select class="input-color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+        </select>
+
+    </form>
+
+    <canvas id="game-canvas" class="game-canvas" width="400" height="400"></canvas>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/build.js"></script>
+</body>
+
+</html>

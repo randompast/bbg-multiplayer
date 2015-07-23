@@ -1,0 +1,55 @@
+body {
+    padding: 50px;
+}
+
+.chat-container {
+    float: left;
+}
+
+.chat-container .log {
+    width: 450px;
+    height: 200px;
+    display: block;
+    margin: 0 0 4px;
+    border: 1px solid #ddd;
+}
+
+.chat-container .input-container {
+    clear: both;
+    overflow: hidden;
+}
+
+.chat-container .msg .time{
+    color: #808080;
+    font-family: monospace;
+}
+
+.chat-container .msg .username{
+    color: #61809b;
+}
+
+.chat-container input {
+    height: 26px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    padding: 0 3px;
+}
+
+.chat-container .input-message {
+    float: left;
+    width: 352px;
+}
+
+.chat-container .btn-submit {
+    float: left;
+    border: 0;
+    background: #444;
+    color: #FFF;
+    padding: 6px;
+    height: 28px;
+    font-size: 14px;
+}
+
+.game-canvas {
+    border: 1px solid #ddd;
+}

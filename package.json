@@ -1,0 +1,22 @@
+{
+  "name": "z",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "node bin/build.js",
+    "serve": "node src/main.js $PORT",
+    "deploy": "npm run build && npm run serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^11.0.0",
+    "lodash": "^3.10.0",
+    "moment": "^2.10.3",
+    "node-static": "^0.7.7",
+    "primus": "^3.1.1",
+    "substream": "^0.2.0",
+    "ws": "^0.7.2"
+  }
+}
