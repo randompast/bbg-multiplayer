@@ -1,10 +1,10 @@
-#BBG-Multiplayer
+# BBG-Multiplayer
 A simple game demo done with node using primus for networking.
 
-#Installation
+# Installation
     
 	npm install
 	npm run deploy
 
-#License
+# License
 Currently Unknown
