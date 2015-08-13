@@ -49,3 +49,8 @@ messageHandler.addHandler('game_map', function(data, spark, primus){
 
     primus.write(data);
 });
+
+messageHandler.addHandler('latency', function(data, spark, primus){
+    // console.log(spark.id, '[latency] received message:', data);
+    spark.write(data);
+});

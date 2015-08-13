@@ -54,6 +54,9 @@ var defaults = {
             }
             else if(data.type === 'game_map'){
                 this.onGameMapReceive(data);
+            } 
+            else if(data.type === 'latency'){
+                this.onLatencyReceive(data);
             }
 
         }, this);
@@ -61,12 +64,20 @@ var defaults = {
         this.renderer = makeRenderer({
             game: this
         });
+        
+        this.primus.write({type: 'latency', time: Date.now()});
     },
 
     onGameMapReceive: function(d) {
         console.log('onGameMapReceive', d);
         this.map.set(d.x, d.y, d.color);
         this.renderer.draw();
+    },
+    
+    onLatencyReceive: function(data) {
+        // console.log(data);
+        document.getElementById('latency').innerHTML = "latency : " + (Date.now() - data.time);
+        this.primus.write({type: 'latency', time: Date.now()});
     },
 
     onKeyAction: function(action) {
@@ -76,11 +87,14 @@ var defaults = {
         var y = player.y;
         if (action === 'up') {
             y--;
-        } else if (action === 'down') {
+        }
+        if (action === 'down') {
             y++;
-        } else if (action === 'left') {
+        } 
+        if (action === 'left') {
             x--;
-        } else if (action === 'right') {
+        }
+        if (action === 'right') {
             x++;
         }
 

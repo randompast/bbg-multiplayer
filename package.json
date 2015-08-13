@@ -1,7 +1,7 @@
 {
-  "name": "z",
+  "name": "bbg-multiplayer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple game demo done with node using primus for networking.",
   "main": "server.js",
   "scripts": {
     "build": "node bin/build.js",
@@ -18,5 +18,16 @@
     "primus": "^3.1.1",
     "substream": "^0.2.0",
     "ws": "^0.7.2"
-  }
+  },
+  "bin": {
+    "bbg-multiplayer": "build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/randompast/bbg-multiplayer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/randompast/bbg-multiplayer/issues"
+  },
+  "homepage": "https://github.com/randompast/bbg-multiplayer"
 }
